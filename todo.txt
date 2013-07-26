@@ -1,0 +1,66 @@
+ASCII 2.0 ToDo
+==============
+
+Project notes by D.J. van Enckevort
+
+Functions to implement
+----------------------
++ Hiding of MLE to save real estate
+  User can check MLE in the Edit menu to show the MLE on top of the table or
+  uncheck it to hide it. If the MLE is hidden the copy, cut, paste and clear
+  items in the edit menu should be disabled and the table should be resized to
+  use all available space. This means the sizing and moving functions need to
+  be rewritten too!
++ Reduced table
+  User can select a starting and an ending character for the table, and the
+  program will remove the unneeded rows in the table to save some space. Note
+  that this means that the fly-over alt-nnn info is calculated by based on the
+  number of colums and rows, this function must be adjusted in order to give
+  the correct information. The same for the input of the character????
++ DirectType
+  The character the user selects in the table is sent directly to another
+  application. The user selects the application upon activation of DirectType
+  from a window.
++ Type2Clipboard
+  The character the user selects in the table is automatically copied to the
+  clipboard, so it is easy to paste the character into another application.
+  (Useful for applications that don't work with DirectType or if you only want
+  to type an occasional character with ASCII Table.
++ Help
+  Context sensitive online help. A draft of a help file is already available,
+  however the functionality is still completely lacking from the program. Need
+  to review all windows and messageboxes.
++ Printing
+  Possibility to print the table.
++ Documentation
+  Documentation should cover the newly to implement functions like DirectType
+  and Type2Clipboard.
+
+Bugs to solve
+-------------
+None
+
+Cleaning up etc.
+----------------
++ Main Window Procedure is far to large, have to split it up into several
+  functions:
+  + DirectType
+  + FontDialog
+  + Init
+  + ....
++ Other Window Procedures should be in separate files
+  + about.c: AboutProc
+  + dtype.c: DirectTypeProc and functions relative to DirectType
+  + settings.c: SettingsProc and functions relative to settings (also loading
+    from INI?)
+  + font.c: Font and codepage stuff
++ What is saved to the INI file should be reviewed, probably is more than I
+  need to know
++ Program should be thoroughly documented
++ Program should get a new icon, and all windows should use it in the system
+  menu. Also the about window should have an icon or a bitmap. (But who is
+  going to create one)
++ Get all strings out of the program into the resources. (Eases localization)
+
+20-5-1999 23:08:17
+

@@ -1,0 +1,24 @@
+                          Upload Information Template for Hobbes.nmsu.edu
+                          ===============================================
+        Archive Filename: ascii11.zip
+       Short Description: ASCII Table with copy & paste (sourcecode incl.)
+        Long Description: ASCII Table with copy & paste, you've got a full
+overview of all characters in the character set, and can select characters with
+the mouse or the keyboard. Also can you type your text directly in a MLE, and
+with one push of a button you can copy it to your clipboard. This program is
+freeware and full sourcecode is included. I use this program to select rarely
+used characters and copy them to Describe. Now remembers size & position of the 
+window & the font.
+      Proposed directory
+           for placement: pub/os2/util/clipbrd
+               Your name: D.J. van Enckevort
+           Email address: enckevor@dds.nl
+    Program contact name: ASCII Table
+   Program contact email: enckevor@dds.nl
+             Program URL: http://huizen.dds.nl/~enckevor
+      Would you like the
+   contact email address
+    included in listings? yes
+Operating System/Version: OS/2 probably 2.0 or up, tested on 4.0
+ Additional requirements: (none)
+                Replaces: ascii10.zip

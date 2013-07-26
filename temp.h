@@ -1,0 +1,14 @@
+#define DLG_SETTINGS                300
+#define SB_START                    301
+#define SB_END                      302
+#define ST_START                    303
+#define ST_END                      304
+#define GB_RANGE                    305
+#define PB_OK                       306
+#define PB_CANCEL                   307
+#define DLG_DIRECTTYPE              400
+#define LB_PROGRAMS                 401
+#define PB_DIRECTTYPE_OK            402
+#define PB_DIRECTTYPE_CANCEL        403
+#define PB_DIRECTTYPE_HELP          404
+#define ST_DIRECTTYPE               405

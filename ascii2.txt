@@ -1,0 +1,113 @@
+ASCII Table 2.0
+Copyright 1998 by D.J. van Enckevort
+
+Table of Contents
+1. Introduction
+2. Disclaimer
+3. Installation
+4. Requirements
+5. Distribution
+6. Using the source-code
+7. Contact Information
+8. Bugs
+9. History
+10. Advertisement
+
+1. Introduction
+I wrote this application with a Windows application in my mind which let you
+pick a character and copy it to the clipboard. Well, this is, sort of a port
+of that program to OS/2. It also was a good lesson in OS/2 programming for me,
+because I had to find out how to resize a dialog box with its contents and how
+to use the font dialog etc.
+I hope you like my three day project and that it will help starting programmers
+to learn OS/2 PM programming.
+This program is freeware and uncrippled (maybe only a bit limited in its use),
+you can use it without any need to register it or pay for it.
+Version 2.0 has a few enhancements requested by users.
+
+2. Disclaimer
+This program is freeware, and you use it on your own risk, you can in no case
+hold me responsible for any damage done to you, your computer or your relations
+even if I was aware of the problem that caused the damage.
+
+3. Installation
+Installation of this program is straight forward, just copy all the files to a
+directory on your harddisk and make an program object for the file ascii.exe.
+If you don't know how to do that I will refer you to the OS/2 tutorial and
+online documentation.
+
+4. Requirements
+As far as I know this program should run on any version of OS/2 from 2.0 and
+above. However I did not test it on any other computer than my own OS/2 Warp
+4.0 machine, so nothing is guaranteed.
+
+5. Distribution
+The distribution of this program is in one zip compressed file, preferably
+called ascii11.zip. It consists of the following files:
+* ascii.doc This documentation
+* ascii.exe The program
+* ascii.c The source-code
+* ascii.h The header file
+* ascii.rc The resource file
+* ascii.ico The icon (Okay I stole it from the OS/2 Warp 4.0 Font palette)
+* ascii.def The definition file
+* makefile The makefile for VisualAge C++ 3.0
+* makefile.$mm An extra file for VisualAge C++ 3.0
+* makefile.dep The dependency file
+* ascii.hobbes Template for hobbes
+* ascii.walnutcreek Template for ftp.cdrom.com
+Some of these files could be left out, because VA can create them again, but I
+include them for people with other compilers, it just might be of use to convert
+the makefile to your compiler.
+
+6. Using the source-code
+You can use the source-code of this program freely, however I would very much
+appreciate it if you could append this notice to any program you write which
+incorporate some or all of this code: "Portions of this program are copied from
+ASCII Table, a freeware program written by D.J. van Enckevort. Copyright on
+those portions remains the property of D.J. van Enckevort"
+Also would I very much appreciate it if you give me a notice if this program is
+to any use for you.
+
+7. Contact Information
+If you have questions you can ask them by email, you should send your message
+to enckevor@dds.nl and give me at least the following information:
+* Your name and e-mail address
+* Name of the program (ASCII Table)
+* Version of the program (2.0)
+* Your question (that's what it is all about)
+* (preferably) Where did you find the program
+* (preferably) OS/2 version number and fixpack level
+If I need more information I will probably ask you.
+Also you can look on my homepage for (possible) information. The URL is:
+http://huizen.dds.nl/~enckevor
+
+8. Bugs
+At the moment I am not aware of any bugs, if you find one, fix it! Or if you
+happen not to be a programmer, you can mail a description of your problem to
+me and I will see what I can do. Nothing is guaranteed, but hey, this is free.
+
+9. History
+June 27, 1998 Started programming of version 2.0
+* Extend usebility of the MLE by adding Open/Save/Save as functions.
+* Improved clipboard functions
+* Reduced used real estate
+* Added alt-code information to titlebar
+* Replaced buttons by menu to save real estate
+* Added accellerators
+April 17, 1998 Version 1.1
+* Now saves position & size and last used font
+* Corrected some typos in documentation
+March 19, 1998
+* Statically linked ibmcom30.lib, so cppom30.dll (included with VA C++) isn't
+  needed anymore.
+March 16, 1998 1.0 release
+March 14, 1998
+* Birth of this program
+
+10. Advertisement
+Here is some (sneaky) advertisement. I am writing a program called Sound
+Scheme Manager, with which you can manage your OS/2 Warp 4.0 sound schems. You
+can create new schemes, rename, change or copy schemes and import or export
+them. As a bonus this program will give OS/2 Warp 3.0 (and 2.1?) sound schemes
+too!

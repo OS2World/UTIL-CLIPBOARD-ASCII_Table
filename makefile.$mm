@@ -1,0 +1,57 @@
+:TARGET.SUFFIXES
+:DEPENDENCY..c .obj .rc .res 
+:TARGET.all
+:DEPENDENCY.
+.\ascii.exe
+:RULE..rc.res
+:ACTION.Compile::Resource Compiler
+:COMMAND.
+rc.exe -r %s %|dpfF.RES
+:RULE.{e:\data\c\ascii}.rc.res
+:ACTION.Compile::Resource Compiler
+:COMMAND.
+rc.exe -r %s %|dpfF.RES
+:RULE..c.obj
+:ACTION.Compile::C++ Compiler
+:COMMAND.
+icc.exe /DFULL /Tdp /O /Gm /C %s
+:RULE.{e:\data\c\ascii}.c.obj
+:ACTION.Compile::C++ Compiler
+:COMMAND.
+icc.exe /DFULL /Tdp /O /Gm /C %s
+:TARGET..\ascii.exe
+:DEPENDENCY.
+.\ascii.obj
+.\tool.obj
+.\ascii.res
+{$(LIB)}os2386.lib
+{$(LIB)}cppom30.lib
+{$(LIB)}ascii.def
+:ACTION.Link::Linker
+:COMMAND.
+icc.exe @<<
+ /Feascii.exe 
+ os2386.lib 
+ cppom30.lib 
+ ascii.def
+ .\ascii.obj
+ .\tool.obj
+<<
+:ACTION.Bind::Resource Bind
+:COMMAND.
+rc.exe .\ascii.res ascii.exe
+:TARGET..\ascii.res
+:DEPENDENCY.
+e:\data\c\ascii\ascii.rc
+{e:\data\c\ascii;$(INCLUDE)}ascii.ico
+e:\data\c\ascii\ascii.h
+:TARGET..\ascii.obj
+:DEPENDENCY.
+e:\data\c\ascii\ascii.c
+{e:\data\c\ascii;$(INCLUDE);}ascii.h
+{e:\data\c\ascii;$(INCLUDE);}tool.h
+:TARGET..\tool.obj
+:DEPENDENCY.
+e:\data\c\ascii\tool.c
+{e:\data\c\ascii;$(INCLUDE);}ascii.h
+{e:\data\c\ascii;$(INCLUDE);}tool.h
